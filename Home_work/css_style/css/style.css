@@ -25,6 +25,15 @@
     font-size: 20px;
 }
 
+.text span {
+    display: inline;
+    padding: 5px 0;
+    background: #FF6347;
+    word-spacing: -.15em;
+    color: #FFFFFF;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
 .main_title,
 .paragraph_title,
 .list_title,
@@ -62,6 +71,9 @@
     margin: 0 0 10px;
 }
 
+.text strong {
+    font-family: 'Arial', sans-serif;
+}
 .list
 {
     padding-left: 20px;
