@@ -1,20 +1,75 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 0 111px 89px 29px;
 }
 
 .logo {
-  width: 61px;
-  height: 24px;
-  padding: 60px 1379px 1104px 480px;
-  object-fit: contain;
-  font-family: CreteRound;
-  font-size: 34px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.26;
-  letter-spacing: 1.7px;
-  text-align: left;
-  color: #060c31;
+    padding: 60px 752px 29px 451px;
 }
+
+.main_section .title {
+    width: 496px;
+    height: 186px;
+    margin: 89px 196px 36px 480px;
+    font: 58px/1.1 "Crete Round", serif;
+    letter-spacing: 2.9px;
+    color: #060c31;
+}
+
+.main_section .text {
+    width: 416px;
+    height: 70px;
+    margin: 36px 271px 25px 480px;
+    font: 15px/1.87 "Lato", serif;
+    letter-spacing: 0.75px;
+    color: #060c31;
+}
+
+.get_started {
+    width: 152px;
+    height: 50px;
+    margin: 47px 20px 28px 480px;
+    border-radius: 25px;
+    border: solid 0 #fff;
+    background-color: #233fe2;
+    font: 15px/1.87 "Lato", serif;
+    color: #fff;
+}
+
+.get_started:hover {
+    background-color: #1f37be;
+}
+
+.get_started:active {
+    background-color: #1b2fa0;
+}
+
+.create_account {
+    width: 164px;
+    height: 50px;
+    margin: 47px 352px 28px 20px;
+    border-radius: 25px;
+    border: solid 3px #fbb0b1;
+    background-color: #fff;
+    font: 15px/1.87 "Lato", serif;
+}
+
+.create_account:hover {
+    background-color: #fdf7f7;
+}
+
+.create_account:active {
+    background-color: #ffe9e9;
+}
+
+.clipart {
+    width: 717px;
+    height: 569px;
+    margin: 29px 0 0 480px;
+    object-fit: contain;
+}
+
