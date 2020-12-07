@@ -4,37 +4,40 @@
 }
 
 .header {
-    margin: 0 111px 89px 29px;
+    margin: 0 90px 0 0;
 }
 
 .logo {
-    padding: 60px 752px 29px 451px;
+    padding: 60px 0px;
 }
 
+.main {
+    margin-left: 480px;
+}
 .main_section .title {
     width: 496px;
-    height: 186px;
-    margin: 89px 196px 36px 480px;
+    height: 192px;
     font: 58px/1.1 "Crete Round", serif;
     letter-spacing: 2.9px;
     color: #060c31;
 }
 
 .main_section .text {
-    width: 416px;
-    height: 70px;
-    margin: 36px 271px 25px 480px;
+    width: 483px;
+    height: 94px;
+    margin: 38px 0;
     font: 15px/1.87 "Lato", serif;
     letter-spacing: 0.75px;
     color: #060c31;
 }
 
 .get_started {
-    width: 152px;
+    padding: 16px 36px ;
+    width: 156px;
     height: 50px;
-    margin: 47px 20px 28px 480px;
     border-radius: 25px;
     border: solid 0 #fff;
+    text-decoration: none;
     background-color: #233fe2;
     font: 15px/1.87 "Lato", serif;
     color: #fff;
@@ -48,10 +51,16 @@
     background-color: #1b2fa0;
 }
 
+.button {
+    margin: 48px 0 28px;
+    width: 717px;
+}
 .create_account {
-    width: 164px;
+    margin-left: 20px;
+    width: 156px;
     height: 50px;
-    margin: 47px 352px 28px 20px;
+    padding: 16px 27.5px;
+    text-decoration: none;
     border-radius: 25px;
     border: solid 3px #fbb0b1;
     background-color: #fff;
@@ -69,7 +78,6 @@
 .clipart {
     width: 717px;
     height: 569px;
-    margin: 29px 0 0 480px;
     object-fit: contain;
 }
 

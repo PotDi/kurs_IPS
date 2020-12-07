@@ -25,8 +25,7 @@
     font-size: 20px;
 }
 
-.text span {
-    display: inline;
+.text .selected_text {
     padding: 5px 0;
     background: #FF6347;
     word-spacing: -.15em;
