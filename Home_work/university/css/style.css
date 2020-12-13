@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top_background {
+    background-image: url('../images/top_backgroud.jpg')
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.menu_item {
+    font: 600 16px/22px 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+.top_section {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 183px 0 315px;
+}
+
+.top_title {
+    font: 600 90px/99px 'Open Sans', sans-serif;
+    color: #FFFFFF;
+    max-width: 801px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-rows: 180px 180px 180px;
+    grid-template-columns: 523px 523px;
+}
