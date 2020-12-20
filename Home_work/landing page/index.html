@@ -6,15 +6,16 @@
     <title>Don't do it!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
+   <div class="top_background">
+       <header class="header">
     <a href="#">
-                <img src="images/logo.png">
+                <img src="images/logo.png" alt="logo">
             </a>
-        <nav>
+        <nav class="menu">
             <a href="#" class="menu_item">
                 Что будет на курсе?
             </a>
@@ -29,16 +30,41 @@
             </a>
         </nav>
     </header>
-    <section>
+   </div>
+    <section class="top_section">
+       <div class="wrapper">
         <h1 class="title">
-            Не делай это
+            Не <span class="text_color">делай </span> это
         </h1>
-        <p class="top_text">
+        <span class="top_text">
             Онлайн-курс для творческих людей, о том, как управлять своим временем
-        </p>
+        </span>
+        <a href="#" class="title_button">
+        Записаться на курс
+        </a>
+       </div>
         <img src="images/top_image.png" class"top_image" alt="picture">
     </section>
-
+    <section class="black_container">
+       <div class="course_objectives">
+        <img src="images/clock.png" alt="clock">
+        <p>
+            Для тех, у кого слишком много идей и слишком мало времени
+        </p>
+       </div>
+       <div>
+           <img src="images/notebook.png" alt="notebook">
+           <p>
+               Метод «списка не дел», который позволит успевать и реализовывать
+           </p>
+       </div>
+              <div>
+           <img src="images/target.png" alt="target">
+           <p>
+               Метод «списка не дел», который позволит успевать и реализовывать
+           </p>
+       </div>
+    </section>
 </body>
 
 </html>
