@@ -7,40 +7,37 @@
     clear: both;
 }
 
-.logo{
-    margin: 60px 0 0 86px;
-    display: inline;
-
+.header {
+    max-width: 1920px;
+    height: 50px;
+    margin: 60px 88px 0 80px;
 }
 
 .top_menu {
-    position: relative;
-    left: 586px;
-    margin: 60px 80px 0 0;
-    display: inline;
+    float: right;
 }
 
 .menu {
-    display: inline;
     padding: 9px 0 9px 0;
+    margin-right: 250px;
 }
 
 .menu_item {
     display: inline;
-    margin: 0 40px;
+    margin: 0px 20px;
     list-style: none;
 }
 
 .menu_link {
     text-decoration: none;
-    font: 13px/2.15 "Lato", serif;
+    font: 13px/2.15 Lato, sans-serif;
     font-weight: bold;
     color: #060c31;
 }
 
 .menu_button {
     text-decoration: none;
-    font: 15px "Lato", serif;
+    font: 15px Lato, sans-serif;
     font-weight: bold;
     color: #060c31;
     border: 1px solid #ffb0b1;
@@ -50,38 +47,37 @@
 
 .section {
     margin: 73px auto 110px 200px;
+    float: left;
 }
 .main_section {
     width: 496px;
-    padding-top: 173px;
 }
 .title {
-    width: 496px;
-    height: 192px;
-    font: 58px/1.1 "Crete Round", serif;
+    font: 58px/1.1 "Crete Round", sans-serif;
     letter-spacing: 2.9px;
     color: #060c31;
+    padding-top: 100px;
 }
 
 .text {
-    width: 483px;
+    width: 436px;
     height: 84px;
-    margin: 38px 0;
-    font: 15px/1.87 "Lato", serif;
+    margin: 42px 0;
+    font: 400 15px/1.87 Lato, sans-serif;
     letter-spacing: 0.75px;
     color: #060c31;
 }
 
 .get_started {
-    padding: 16px 36px ;
+    padding: 16px 36px;
     width: 156px;
     height: 50px;
     border-radius: 25px;
     border: solid 0 #fff;
     text-decoration: none;
     background-color: #233fe2;
-    font: 15px/1.87 "Lato", serif;
-    color: #fff;
+    font: 700 15px Lato, sans-serif;
+    color: #FFFFFF;;
 }
 
 .get_started:hover {
@@ -93,19 +89,21 @@
 }
 
 .button {
-    margin: 48px 0 28px;
+    margin-top: 76px;
     width: 717px;
+
 }
 .create_account {
     margin-left: 20px;
     width: 156px;
     height: 50px;
-    padding: 16px 27.5px;
+    padding: 16px 23px;
     text-decoration: none;
     border-radius: 25px;
     border: solid 3px #fbb0b1;
-    background-color: #fff;
-    font: 15px/1.87 "Lato", serif;
+    background-color: #fffff;
+    font: 700 15px "Lato", sans-serif;
+    color: #060C31;
 }
 
 .create_account:hover {
@@ -117,18 +115,14 @@
 }
 
 .clipart {
-    width: 717px;
-    height: 569px;
+    width: 800px;
+    height: 600px;
     position: absolute;
-    display: inline;
     margin-left: 640px;
-    margin-top: 0;
 }
 
 .footer {
-    float: right;
-    display: inline-block;
-    margin-top: 104px;
+    margin: 773px 0 0 800px;
 }
 
 .footer_picture {
