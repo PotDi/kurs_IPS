@@ -81,9 +81,14 @@
 .black_container {
     background-color: #000000;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    height: 398px;
 }
 
 .course_objectives {
-    
+    font: 400 22px/26px 'Roboto Codensed', sans-serif;
+    color: #ffffff;
+    width: 337px;
+    margin: 0 auto;
 }
