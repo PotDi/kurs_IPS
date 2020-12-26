@@ -83,7 +83,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 1920px;
     height: 398px;
+    margin: 0 auto;
 }
 
 .course_objectives {
@@ -91,4 +93,61 @@
     color: #ffffff;
     width: 337px;
     margin: 0 auto;
+}
+
+.middle_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1136px;
+    margin: 0 auto;
+}
+
+.middle_box_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+}
+
+.middle_box_first::before {
+    content: url(..//images/finances.png);
+    width: 510px;
+    height: 476px;
+}
+
+.shell_middle_box {
+    flex-direction: column;
+    margin-left: 52px;
+}
+
+.title_middle_box {
+    font: 500 48px/61px Monstserrat, sans-serif;
+    width: 376px;
+    color: #000000
+}
+
+.text_middle_box {
+    font: 400 18px/24px 'Roboto Codensed', sans-serif;
+    width: 574px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 29px;
+}
+
+.middle_box_second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 691px;
+}
+
+.middle_box_second::after {
+    content: url(..//images/blowing.png);
+    width: 510px;
+    height: 691px;
+}
+
+.middle_box_second .shell_middle_box {
+    margin-right: 57px;
 }
