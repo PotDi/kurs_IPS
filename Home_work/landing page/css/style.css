@@ -151,3 +151,35 @@
 .middle_box_second .shell_middle_box {
     margin-right: 57px;
 }
+
+.section {
+    margin-left: 394px;
+    margin-top: 133px;
+}
+
+.title_grid {
+    font: 500 48px/59px Monstserrat, sans-serif;
+    margin-left: 400px;
+    margin-bottom: 61px;
+}
+
+.title_grid .title_grid_color {
+    color: #EE58B6;
+}
+
+.grid_container {
+    display: grid;
+    width: 1213px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3.5fr 3.5fr 3.5fr;
+    grid-gap: 30px 30px;
+}
+
+.box_grid_container {
+    font: 400 16px/21px 'Roboto Codensed', sans-serif;
+    background-color: #000000;
+    border-radius: 7.5px;
+    color: #ffffff;
+    align-self: center;
+    padding: 3em;
+}
