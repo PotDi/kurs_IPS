@@ -88,11 +88,16 @@
     margin: 0 auto;
 }
 
+.image_black_container {
+	margin-bottom: 24px;
+}
+
 .course_objectives {
     font: 400 22px/26px 'Roboto Codensed', sans-serif;
     color: #ffffff;
-    width: 337px;
+    width: 370px;
     margin: 0 auto;
+	text-align: center;
 }
 
 .middle_container {
