@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <div class="top_background">
         <header class="header">
             <a href="#">
                 <img src="images/logo.png" alt="logo">
@@ -30,7 +29,6 @@
                 </a>
             </nav>
         </header>
-    </div>
     <section class="top_section">
         <div class="wrapper">
             <h1 class="title">
@@ -132,6 +130,93 @@
             </div>
         </div>
     </section>
+    <section class="section_container">
+            <h2 class="title_section_container">
+                Всё, что вы хотели <span class="title_section_container_color">узнать</span>
+            </h2>
+        <div class="wrapper_section_container">
+            <h3 class="first_subtitle_section_container">
+                Как проходит курс?
+            </h3>
+            <p class="text_section_container">
+                Каждую неделю на протяжении 3 месяцев, вам приходит новый урок на имейл. 
+                Проходить уроки, вы можете в комфортном для вас темпе.
+            </p>
+            <hr class="first_line">
+            <h3 class="second_subtitle_section_container">
+                Можно получить все уроки сразу?
+            </h3>
+            <hr class="line">
+            <h3 class="third_subtitle_section_container">
+                Если занятия не придут?
+            </h3>
+            <hr class="line">
+        </div>
+    </section>
+    <div class="subscribe_background">
+        <section class="subscribe">
+            <h2 class="subscribe_title">
+                Единственное,   что нужно <span class="subscribe_title_color">сделать</span>
+            </h2>
+            <form action="php/handler.php" method="get" class="form">
+                <input type="text" name="name" placeholder="Ваше имя" class="subscribe_input_form">
+                <input type="email" name="email" placeholder="Email" class="subscribe_input_form">
+                <select size="1" name="activities" class="subscribe_select_form">
+                   <option disabled selected>
+                        Деятельность
+                   </option>
+                    <option value="developer">
+                        Программист
+                    </option>
+                    <option value="designer" class="subscribe_select_designer">
+                        Дизайнер
+                    </option>
+                    <option value="marketer" class="subscribe_select_marketer">
+                        Маркетолог
+                    </option>
+                </select>
+                <button type="submit" class="subscribe_button_form">
+                    Записаться на курс
+                </button>
+                <div class="subscribe_checkbox_agree">
+                <input type="checkbox" name="agree" id="subscribe_checkbox_agree" class="subscribe_checkbox">
+                   <label for="subscribe_checkbox_agree" class="subscribe_checkbox_label">
+                   Согласен получать информационные материалы о старте курса
+                   </label>
+                </div>
+            </form>
+        </section>
+    </div>
+    <section class="wrapper_about_author">
+        <div>
+            <img src="images/photo.png" alt="author" class="photo_author">
+            <h2 class="title_wrapper_about_author">
+                Дональд Рос
+            </h2>
+            <p class="subtitle_wrapper_about_author">
+                Типограф, творческий предприниматель и лектор Королевской академии искусств Нидерландов
+            </p>
+            <p class="text_wrapper_about_author">
+                Создаю титры к фильмам, шрифты, сложные интерфейсы для смартфонов. Автор собственных креативных проектов, в том числе системы тайм-менеджмента и приложения для смартфонов ToDon’tList.
+            </p>
+            <a href="#" class="logo_wrapper_about_author">
+                <img src="images/logo_instagram.png" alt="logo_instagram" class="logo_social">
+            </a>
+            <a href="#" class="logo_wrapper_about_author">
+                <img src="images/logo_facebook.png" alt="logo_facebook" class="logo_social">
+            </a>
+            <a href="#" class="logo_wrapper_about_author">
+                <img src="images/logo_pinterest.png" alt="logo_pinterest" class="logo_social">
+            </a>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_content">
+            <a href="#">
+                <img src="images/logo_footer.png" alt="logo">
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>
