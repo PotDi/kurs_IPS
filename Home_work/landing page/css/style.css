@@ -73,7 +73,7 @@
 
 .loaded .top_image {
     opacity: 1;
-    transition: 2s ease-out 1s;
+    transition: 1s ease-out 1s;
     transform: scale(1.1);
 }
 
@@ -104,26 +104,48 @@
 }
 
 .black_container {
-    background-color: #000000;
+    background-color: #ffffff;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 398px;
     margin-top: 60px;
+    transition-property: background-color;
+}
+
+.loaded .black_container {
+    background-color: #000000;
+    transition: 1s ease 1s;
 }
 
 .image_black_container {
     margin-bottom: 24px;
 }
 
-.course_objectives {
+.first_column,.second_column,.third_column {
     font: 400 22px/26px 'Roboto Codensed', sans-serif;
     color: #ffffff;
     width: 370px;
     text-align: center;
+    opacity: 0;
+    transition-property: opacity;
 }
 
+.loaded .first_column {
+    opacity: 1;
+    transition: 1s ease 3s;
+}
+
+.loaded .second_column {
+    opacity: 1;
+    transition: 2s ease 3.5s;
+}
+
+.loaded .third_column {
+    opacity: 1;
+    transition: 3s ease 4s;
+}
 .middle_container {
     display: flex;
     justify-content: center;
@@ -144,11 +166,33 @@
     content: url(..//images/finances.png);
     width: 510px;
     height: 476px;
+    opacity: 0;
+    transition-property: opacity,transform;
+}
+
+.loaded .middle_box_first::before {
+    opacity: 1;
+    transition: 1s ease 4.5s;
+    transform: translate(30px);
 }
 
 .shell_middle_box {
     flex-direction: column;
-    margin-left: 52px;
+    margin-left: 82px;
+    transition-property: opacity,transform;
+    opacity: 0;
+}
+
+.loaded .shell_middle_box {
+    opacity: 1;
+    transition: 1s ease 4.5s;
+    transform: translate(-30px);
+}
+
+.loaded .middle_box_second .shell_middle_box {
+    opacity: 1;
+    transition: 1s ease 5.5s;
+    transform: translate(30px);
 }
 
 .title_middle_box {
@@ -175,10 +219,18 @@
     content: url(..//images/blowing.png);
     width: 510px;
     height: 691px;
+    opacity: 0;
+    transition: opacity,transform;
+}
+
+.loaded .middle_box_second::after {
+    opacity: 1;
+    transition: 1s ease 5.5s;
+    transform: translate(-30px);
 }
 
 .middle_box_second .shell_middle_box {
-    margin-right: 57px;
+    margin-right: 110px;
 }
 
 .section {
