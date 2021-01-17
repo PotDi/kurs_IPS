@@ -60,12 +60,21 @@
 }
 
 .loaded .wrapper {
-    transform: 2s ease 6s;
+    transition: 1s ease 1s;
     opacity: 1;
 }
 
 .top_image {
     margin-right: 205px;
+    transition-property: opacity,transform;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.loaded .top_image {
+    opacity: 1;
+    transition: 2s ease-out 1s;
+    transform: scale(1.1);
 }
 
 .title {
