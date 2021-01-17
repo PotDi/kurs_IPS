@@ -10,6 +10,13 @@
     justify-content: space-between;
     margin: 30px 120px 0;
     padding-top: 20px;
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.loaded .header {
+    transition: 1s ease 0.2s;
+    opacity: 1;
 }
 
 .menu {
@@ -37,7 +44,7 @@
     display: flex;
     justify-content: space-between;
     align-content: space-between;
-    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     padding: 60px 0 0px;
 }
@@ -47,7 +54,18 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 0 auto;
+    margin-left: 148px;
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.loaded .wrapper {
+    transform: 2s ease 6s;
+    opacity: 1;
+}
+
+.top_image {
+    margin-right: 205px;
 }
 
 .title {
