@@ -162,15 +162,12 @@
     height: 520px;
 }
 
-.middle_box_first::before {
-    content: url(..//images/finances.png);
-    width: 510px;
-    height: 476px;
+.image_box {
     opacity: 0;
     transition-property: opacity,transform;
 }
 
-.loaded .middle_box_first::before {
+.loaded .image_box {
     opacity: 1;
     transition: 1s ease 4.5s;
     transform: translate(30px);
@@ -215,15 +212,12 @@
     height: 691px;
 }
 
-.middle_box_second::after {
-    content: url(..//images/blowing.png);
-    width: 510px;
-    height: 691px;
+.middle_box_second {
     opacity: 0;
     transition: opacity,transform;
 }
 
-.loaded .middle_box_second::after {
+.loaded .middle_box_second {
     opacity: 1;
     transition: 1s ease 5.5s;
     transform: translate(-30px);
@@ -250,7 +244,7 @@
 
 .grid_container {
     display: grid;
-    width: 1213px;
+    max-width: 1213px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3.5fr 3.5fr 3.5fr;
     grid-gap: 30px 30px;
