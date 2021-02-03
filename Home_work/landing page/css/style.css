@@ -270,13 +270,16 @@
 }
 
 .wrapper_section_container {
-    margin-top: 60px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+    cursor: pointer;
 }
 
 .title_section_container {
     font: 500 49px/59px Monstserrat, sans-serif;
     width: 100%;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .title_section_container .title_section_container_color {
@@ -310,7 +313,10 @@
     font: 400 18px/21px 'Roboto Codensed', sans-serif;
     color: rgba(0, 0, 0, 0.7);
     width: 626px;
-    border-bottom: 1px solid #000000;
+}
+
+.js_hidden-block {
+    display: block;
 }
 
 .third_subtitle_section_container {
