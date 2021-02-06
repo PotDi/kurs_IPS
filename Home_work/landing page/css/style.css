@@ -231,13 +231,15 @@
 }
 
 .section {
-    margin-left: 394px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin-top: 133px;
 }
 
 .title_grid {
     font: 500 48px/59px Monstserrat, sans-serif;
-    margin-left: 400px;
     margin-bottom: 61px;
 }
 
@@ -313,10 +315,6 @@
     font: 400 18px/21px 'Roboto Codensed', sans-serif;
     color: rgba(0, 0, 0, 0.7);
     width: 626px;
-}
-
-.js_hidden-block {
-    display: block;
 }
 
 .third_subtitle_section_container {
