@@ -19,6 +19,9 @@
     opacity: 1;
 }
 
+.logo {
+    max-width: 100%;
+}
 .menu {
     justify-content: center;
 }
@@ -69,6 +72,7 @@
     transition-property: opacity, transform;
     overflow: hidden;
     opacity: 0;
+    max-width: 100%;
 }
 
 .loaded .top_image {
@@ -108,7 +112,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 1920px;
     height: 398px;
     margin-top: 60px;
     transition-property: background-color;
@@ -271,8 +275,9 @@
     margin-top: 174px;
 }
 
-.wrapper_section_container {
+.accordion {
     border-bottom: 1px solid #000000;
+    text-align: left;
     padding-bottom: 5px;
     cursor: pointer;
 }
@@ -288,50 +293,38 @@
     color: #EE58B6;
 }
 
-.first_subtitle_section_container {
+.accordion_title {
     font: 500 26px/31px Monstserrat, sans-serif;
     color: #000000;
     margin-top: 37px;
 }
 
-.first_subtitle_section_container::after {
-    content: url(../images/cross.png);
-    margin-left: 420px;
+.accordion_title::after {
+    content: url(..//images/plus.png);
+    float: right;
 }
 
-.second_subtitle_section_container {
-    font: 500 26px/31px Monstserrat, sans-serif;
-    color: #000000;
-    margin-top: 37px;
+.active::after {
+    content: url(..//images/cross.png);
+    float: right;
 }
 
-.second_subtitle_section_container::after {
-    content: url(../images/plus.png);
-    margin-left: 243px;
-}
-
-.text_section_container {
+.accordion_text {
     margin-top: 17px;
     font: 400 18px/21px 'Roboto Codensed', sans-serif;
     color: rgba(0, 0, 0, 0.7);
     width: 626px;
-}
-
-.third_subtitle_section_container {
-    font: 500 26px/31px Monstserrat, sans-serif;
-    color: #000000;
-    margin-top: 37px;
-}
-
-.third_subtitle_section_container::after {
-    content: url(../images/plus.png);
-    margin-left: 351px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 
 .subscribe_background {
-    height: 694px;
+    max-height: 694px;
     background-color: #000000;
     margin-top: 160px;
+    width: 100%;
+    padding-bottom: 290px;
 }
 
 .subscribe_title {
