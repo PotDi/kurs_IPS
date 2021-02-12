@@ -1,7 +1,18 @@
 window.addEventListener('load', function () {
     setBodyLoaded();
     setAnimatedBlockLoaded();
+    initScrollUpButton();
 });
+
+$(window).on('load', () => {
+    initScrollUpButton();
+})
+
+
+$(window).on('scroll', () => {
+    toggleScrollUpButton();
+})
+
 
 function setBodyLoaded() {
     let body = document.getElementsByTagName('body')[0];
@@ -25,4 +36,20 @@ function setAnimatedBlockLoaded() {
 
         }
     })
+}
+
+function initScrollUpButton() {
+    $('#scrollUpButton').click(() => {
+        $('html').animate({
+            scrollTop: 0,
+        }, 500)
+    })
+}
+
+function toggleScrollUpButton() {
+    if ($(window).scrollTop() >= 300) {
+        $('#scrollUpButton').addClass('visible')
+    } else {
+        $('#scrollUpButton').removeClass('visible')
+    }
 }

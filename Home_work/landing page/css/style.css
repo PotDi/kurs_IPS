@@ -78,7 +78,7 @@
 .loaded .top_image {
     opacity: 1;
     transition: 1s ease-out 1s;
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 .title {
@@ -116,6 +116,7 @@
     height: 398px;
     margin-top: 60px;
     transition-property: background-color;
+    width: 100%;
 }
 
 .loaded .black_container {
@@ -279,7 +280,6 @@
     border-bottom: 1px solid #000000;
     text-align: left;
     padding-bottom: 5px;
-    cursor: pointer;
 }
 
 .title_section_container {
@@ -296,7 +296,8 @@
 .accordion_title {
     font: 500 26px/31px Monstserrat, sans-serif;
     color: #000000;
-    margin-top: 37px;
+    margin-top: 30px;
+    cursor: pointer;
 }
 
 .accordion_title::after {
@@ -304,7 +305,7 @@
     float: right;
 }
 
-.active::after {
+.open .accordion_title::after {
     content: url(..//images/cross.png);
     float: right;
 }
@@ -314,9 +315,15 @@
     font: 400 18px/21px 'Roboto Codensed', sans-serif;
     color: rgba(0, 0, 0, 0.7);
     width: 626px;
-    max-height: 0;
-    overflow: hidden;
     transition: max-height 0.3s ease-out;
+}
+
+.close .accordion_text {
+    height:0px;
+    transition:height 1s ease-out;
+    transform: scaleY(0);
+    float:left;
+    display:block;
 }
 
 .subscribe_background {
@@ -498,4 +505,21 @@
     min-height: 108px;
     text-align: center;
     margin-top: 130px;
+}
+
+.scroll_up_button {
+    background: url(../images/upArrow.png);
+    position: fixed;
+    width: 66px;
+    height: 66px;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.scroll_up_button.visible {
+    visibility: visible;
+    opacity: 1;
 }

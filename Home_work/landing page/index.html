@@ -91,6 +91,7 @@
             <img src="images/blowing.png" alt="image_finances" class="image_box">
         </div>
     </section>
+    <!--Раздел с контейнерами -->
     <section class="section">
         <h2 class="title_grid">
             На курсе ты <span class="title_grid_color">сможешь</span>
@@ -134,12 +135,13 @@
             </div>
         </div>
     </section>
+    <!--Раздел с аккордионом -->
     <section class="section_container">
         <h2 class="title_section_container">
             Всё, что вы хотели <span class="title_section_container_color">узнать</span>
         </h2>
-        <div class="accordion">
-            <h3 class="accordion_title">
+        <div class="accordion open" id="accordion">
+            <h3 class="accordion_title" id="accordion_title">
                 Как проходит курс?
             </h3>
             <p class="accordion_text">
@@ -147,8 +149,8 @@
                 Проходить уроки, вы можете в комфортном для вас темпе.
             </p>
         </div>
-        <div class="accordion">
-            <h3 class="accordion_title">
+        <div class="accordion close" id="accordion">
+            <h3 class="accordion_title" id="accordion_title">
                 Можно получить все уроки сразу?
             </h3>
             <p class="accordion_text">
@@ -156,8 +158,8 @@
                 Проходить уроки, вы можете в комфортном для вас темпе.
             </p>
         </div>
-        <div class="accordion">
-            <h3 class="accordion_title">
+        <div class="accordion close" id="accordion">
+            <h3 class="accordion_title" id="accordion_title">
                 Если занятия не придут?
             </h3>
             <p class="accordion_text">
@@ -166,6 +168,7 @@
             </p>
         </div>
     </section>
+    <!--Форма обратной связи -->
     <div class="subscribe_background">
         <section class="subscribe">
             <h2 class="subscribe_title">
@@ -200,6 +203,7 @@
             </form>
         </section>
     </div>
+    <!--Раздел про автора -->
     <section class="wrapper_about_author">
         <div>
             <img src="images/photo.png" alt="author" class="photo_author">
@@ -223,6 +227,7 @@
             </a>
         </div>
     </section>
+    <!-- Подвал сайта-->
     <footer class="footer">
         <div class="footer_content">
             <a href="#">
@@ -230,10 +235,12 @@
             </a>
         </div>
     </footer>
-    <script src="js/app.js">
-    </script>
-    <script src="js/list.js">
-    </script>
+    <!--Добавление кнопки скролла -->
+    <div class="scroll_up_button" id="scrollUpButton"></div>
+    
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/list.js"></script>
 </body>
 
 </html>
