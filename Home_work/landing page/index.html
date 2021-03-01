@@ -178,23 +178,23 @@
                 <input type="text" name="name" placeholder="Ваше имя" class="subscribe_input_form">
                 <input type="email" name="email" placeholder="Email" class="subscribe_input_form">
                 <select size="1" name="activities" class="subscribe_select_form">
-                    <option disabled selected>
+                    <option disabled selected class="select_activities">
                         Сфера деятельности
                     </option>
-                    <option value="developer">
+                    <option value="developer" class="select_activities">
                         Программист
                     </option>
-                    <option value="designer" class="subscribe_select_designer">
+                    <option value="designer" class="select_activities">
                         Дизайнер
                     </option>
-                    <option value="marketer" class="subscribe_select_marketer">
+                    <option value="marketer" class="select_activities">
                         Маркетолог
                     </option>
-                </select>
-                <button type="submit" class="subscribe_button_form">
+                </select>-->
+                <button type="submit" class="subscribe_button_form" id="subscribeButton">
                     Записаться на курс
                 </button>
-                <div class="subscribe_checkbox_wrapper">
+               <div class="subscribe_checkbox_wrapper">
                     <input type="checkbox" name="agree" id="subscribe_checkbox_agree" class="subscribe_checkbox">
                     <label for="subscribe_checkbox_agree" class="label">
                         Согласен получать информационные материалы о старте курса
@@ -237,10 +237,36 @@
     </footer>
     <!--Добавление кнопки скролла -->
     <div class="scroll_up_button" id="scrollUpButton"></div>
-    
+    <!--Добавление popup --->
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <div class="wrapper_popup">
+        <img src="images/closePopup.png" alt="closePopup" class="closePopup" id="closeButton">
+        <img src="images/popup.png" alt="popup" class="imagePopup">
+        <div>
+            <h2 class="titlePopup">
+                Записаться на курс
+            </h2>
+            <form action="php/handler.php" method="get" class="formPopup">
+                <input type="text" name="name" placeholder="Ваше имя" class="inputPopup name" required>
+                <input type="email" name="email" placeholder="Email" class="inputPopup">
+                <input type="text" name="activity" placeholder="Деятельность" class="inputPopup">
+                <div>
+                    <input type="checkbox" name="agree" id="subscribeCheckboxPopup" class="subscribeCheckboxPopup">
+                    <label for="subscribeCheckboxPopup" class="labelPopup">
+                        Согласен получать информационные материалы о старте курса
+                    </label>
+                <button type="submit" class="buttonPopup">
+                    Записаться на курс
+                </button>
+                </div>
+            </form>
+            </div>
+    </div>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/list.js"></script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
